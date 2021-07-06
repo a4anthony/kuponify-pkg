@@ -1,0 +1,32 @@
+{
+  "name": "a4anthony/kuponify",
+  "description": "E-commerce coupon generator and dashboard",
+  "keywords": ["laravel", "coupon", "voucher"],
+  "license": "MIT",
+  "authors": [{
+    "name": "a4anthony",
+    "email": "anthonygakro@gmail.com"
+  }],
+  "minimum-stability": "dev",
+  "require": {
+
+  },
+  "require-dev": {
+
+  },
+  "autoload": {
+    "psr-4": {
+      "A4anthony\\Kuponify\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "\\A4anthony\\Kuponify\\KuponifyServiceProvider"
+      ],
+      "aliases": {
+        "Kuponify": "A4anthony\\Kuponify\\Facades\\Kuponify"
+      }
+    }
+  }
+}
